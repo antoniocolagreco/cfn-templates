@@ -1,0 +1,20 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Resources:
+  DogsBucket:
+    Type: AWS::S3::Bucket
+
+  BucketContentLambdaRole:
+    Type: AWS::IAM::Role
+    Properties:
+      Policies:
+        PolicyDocument:
+          Version:
+
+
+
+
+Outputs:
+  DogsBucketName:
+    Description: The name of the Dogs Bucket
+    Value: !Ref DogsBucket
